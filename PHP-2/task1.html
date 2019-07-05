@@ -1,0 +1,41 @@
+<!-- Practice Lab Test #2, Task 1 -->
+<!-- EECS1012 - York University -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Appointment </title>
+  <meta charset="utf-8">
+  <style>
+  body { font-family: sans-serif;}
+  </style>
+</head>
+<body>
+  <h1> PHP Clinic </h1>
+  <h3> Book Appointment </h3>
+  <!-- Make sure the <form> tag comes before all form control elements -->
+  <form action="http://localhost/task1.php" method="get">
+  <p> Last Name: <input type="text" name="surname" maxlength="20"> </p> <!-- It is OK if you don't put in the maxlength -->
+  <p> First Name: <input type="text" name="firstname" maxlength="20"> </p> <!-- It is OK if you don't put in the maxlength -->
+  <p> Date: <input type="text" name="date"> </p> <!-- Since Firefox doesn't support date, use type="text" -->
+  <p> Is this your first visit: <input type="checkbox" value="first"> </p>
+  <p> Payment/insurance?
+    <input type="radio" name="payment" value="OHIP" checked> Health card  <!-- note the "checked" attribute to select this as the default -->
+    <input type="radio" name="payment" value="Private"> Private Insurance
+    <input type="radio" name="payment" value="Cash"> Cash
+  </p>
+  <p> Symptoms
+  <select name="symptoms">
+    <option>Fever </option>
+    <option>Cough</option>
+    <option>Rash</option>
+    <option>Dizziness</option>
+    <option>Insomnia</option>
+    <option>Others</option>
+  </select> </p>
+  <p> Additional symptoms </p>
+  <textarea name="additional" rows="4" cols="50">Please write any additional symptoms or reason for visit here.
+  </textarea>
+  <p> <input type="submit" value="Book Now"> </p>
+</form> <!-- Make sure the closing </form> tag is after the submit button -->
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  background-color: #ffffcc; /* The body has a light yellow colour */
+  font-size: 1.0em;
+}
+
+header p {
+  text-align: center;
+  color: blue;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1.3em;
+  color: yellow;
+  background: black;
+}
+
+/* Make the sections abut, so no background shows inbetween. */
+
+section {
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+/* Separate the input parameter area from the other sections with a light tan
+ background colour */
+
+section.inputParameters {
+  background: #efe;
+}
+
+/* Separate the output resulsts area from the other sections with a light mauve
+ background colour */
+
+section.outputResults {
+  background: #eec;
+}
+
+/* Separate the operators area from the other sections with a light tan
+ background colour */
+
+section.operations {
+  background: #dff;
+}
+
+section.input {
+  text-align: right;
+}
+/* Make every section have some background above its heading */
+
+section h2 {
+  padding-top: 10px;
+}
+
+/* Same font and margins for the name input and for the name output fields */
+input {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+/* nameInstruction is used for the instruction following the name input text box */
+
+.instruction {
+  margin-left:40px;
+}
+
+/* For the name input text field */
+
+input.fullName {
+  margin-left:40px;
+  text-align: center;
+}
+
+/* displayGivenName and displayFamiilyName are for the split name style
+   that follows the output result heading */
+
+.displayGivenName {     /* Span given name */
+  margin-left: 20px;
+  text-align: center;
+  color: brown;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.displayFamilyName {     /* Span family name */
+  margin-left: 20px;
+  text-align: center;
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* To make the buttons stand out from their background use the body color */
+
+button {
+  background: #ffc;
+  line-height: 1.3;
+  font-size: inherit;
+  margin-left: 20px;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Javascript exercise</TITLE>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="report_2.css" />
+    <script src="report_2.js"></script>
+  </head>
+  <body onload="initializeInputOutputFields()">
+    <header>
+      <p>Javascript play with numbers
+    </header>
+    
+    <!-- Elements setting the exercise parameters -->
+    <section class="inputParameters">
+      <h1>Input parameters</h1>
+      
+      <p>For easier testing
+      <button onClick="setNumbers()">Set Number List</button>
+      <button onClick="setMixedList()">Set Mixed List</button>
+      
+      <span class="instruction">List item separator</span>
+      <input id="separatorInput" type="text" size=3 class="listInput" />
+      <br><br>
+      
+      <input id="listInput" type="text" size=60
+      placeholder="Enter list of numbers and/or words" class="listInput" />
+    </section>
+    
+    <!-- Elements setting the output results -->
+    <section class=outputResults>
+      <h1>Output results</h1>
+      
+      <!-- The following two fields are readonly
+       because they are computed results. -->
+      
+      Number count
+      <input type="text" size=3 id="resultNumberCount" readonly
+      style="text-align: right;"/>
+      
+      <span class="instruction">Number total</span>
+      <input type="text" size=5 id="resultNumberTotal" readonly
+      style="text-align: right;"/>
+      
+      <span class="instruction">Word count</span>
+      <input type="text" size=3 id="resultWordCount" readonly
+      style="text-align: right;"/>
+    </section>
+    
+    <!--  The buttons invoking the exercise functions -->
+    <section class=operations>
+      <h1>The operations</h1>
+      <button id="addNumbers" onClick="addNumbers()">Add List of Numbers</button>
+      <button id="doArithment" onClick="doArithment()">Do Arithmetic</button>
+      <button id="clearResults" onClick="clearResults()">Clear Results</button>
+    </section>
+  </body>
+</html>
